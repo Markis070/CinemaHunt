@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    background-color: #020617;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 10px 20px;
+    background: #020617;
+    margin: 0;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.cinemahunt-sidebar {
+    background-color: #020617;
+    padding: 15px;
+}
+
+.navtab {
+    list-style: none;
+    padding: 0px;
+}
+
+.navtab li {
+    margin: 10px 0;
+}
+
+.navtab a {
+    text-decoration: none;
+    color: white;
+}
+
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card:hover {
+    transform: scale(1.08);
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.movie-card p {
+    font-size: 12px;
+    margin: 10px;
+    color: #cbd5f5;
+}
+
+.add-fav-btn {
+    margin: 10px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #e11d48;
+    color: white;
+    font-size: 12px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .add-fav-btn {
+    opacity: 1;
+}
+
+.movie-card p:first-of-type {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.add-fav-btn:hover {
+    background-color: #be123c;
+}
+
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#favorites {
+    padding: 20px;
+    background-color: #020617;
+}
+
+#favorites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+#favorites-list li {
+    background: #1e293b;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+.fav-card {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.fav-card img {
+    border-radius: 5px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.fav-card h4 {
+    flex: 1;
+    margin: 10;
+    font-size: 14px;
+}
+
+.fav-card:hover {
+    transform: scale(1.05);
+}
+
+.remove-fav-btn {
+    background: #ef4444;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.remove-fav-btn:hover {
+    background: #dc2626;
+}
+
+@media (max-width: 768px) {
+    
+    #movies {
+        justify-content: center;
+    }
+
+    .movie-card {
+        width: 90%;
+    }
+
+    #search-input {
+        width: 80%;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .navtab {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navtab li {
+        margin: 5px 10px;
+    }
+
+    .add-fav-btn {
+        width: 90%;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#close-modal {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#trending-movies {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.category div {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+}

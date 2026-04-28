@@ -1,0 +1,97 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CinemaHunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Welcome to CinemaHunt</h1>
+
+    <nav class="cinemahunt-navbar">
+        <ul class="navbar">
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Use app</a></li>
+        </ul>
+    </nav>
+
+    <section class="signin">
+      <h2>Sign In</h2>
+
+      <input type="text" placeholder="Username">
+      <br><br>
+
+      <input type="password" placeholder="Password">
+      <br><br>
+
+      <button>Login</button>
+    </section>
+
+    <nav class="cinemahunt-sidebar">
+        <ul class="navtab">
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#tv-shows">TV shows</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Awards & events</a></li>
+            <li><a href="#">Celebs</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search for a movie...">
+      <button>Search</button>
+    </div>
+
+    <section id="trending">
+      <h2>🔥 Trending Now</h2>
+      <div id="trending-movies"></div>
+    </section>
+
+    <section id="categories">
+      <h2>🎬 Categories</h2>
+
+      <div class="category">
+        <h3>Action</h3>
+        <div id="action-movies"></div>
+      </div>
+
+      <div class="category">
+        <h3>Comedy</h3>
+        <div id="comedy-movies"></div>
+      </div>
+
+      <div class="category">
+        <h3>Horror</h3>
+        <div id="horror-movies"></div>
+      </div>
+    </section>
+
+    <section id="movies">
+      <h2>top Movies</h2>
+    </section>
+
+    <p id="loading" style="display: none; text-align: center;">Loading movies...</p>
+
+    <section id="favorites">
+      <h2>Your Favorites</h2>
+      <div id="favorites-list"></div>
+    </section>
+
+    <div id="movie-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+     <footer>©2026 CinemaHunt.com</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
