@@ -1,0 +1,25 @@
+# CinemaHunt
+
+CinemaHunt is a movie database application that allows users to search for movies, view details, and save their favorite titles.
+This project was built to demonstrate proficiency in API intergration, asynchronous JavaScript, and dynamic DOM manipulation.
+
+## 🚀 Live Demo
+https://github.com/Markis070/CinemaHunt.git
+
+## 🛠️ Tech Stack
+- **HTML5**: Structural layout.
+- **CSS3**: Responsive design and styling.
+- **JavaScript (ES6+)**: Logic, DOM manipulation, and API fetching.
+- **OMDb API**: Intergration for dynamic movie data.
+
+## ⚙️ Features
+- **Real-time Search**: Search for any movie and get instant results.
+- **Interactive Details**: View movie posters, release dates, and plot summaries.
+- **Favorites System**: Users can save/remove movies from a local storage-backed favorites list.
+
+## 📦 How to Run Locally
+1. Clone this repository: `git clone https://github.com/Markis070/CinemaHunt.git`
+2. Open `index.html` in your web browser.
+
+---
+*Developed by Markis Martiin.*
