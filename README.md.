@@ -1,7 +1,7 @@
 # CinemaHunt
 
 CinemaHunt is a movie database application that allows users to search for movies, view details, and save their favorite titles.
-This project was built to demonstrate proficiency in API intergration, asynchronous JavaScript, and dynamic DOM manipulation.
+This project was built to demonstrate proficiency in API integration, asynchronous JavaScript, and dynamic DOM manipulation.
 
 ## 🚀 Live Demo
 [https://markis070.github.io/CinemaHunt/](https://markis070.github.io/CinemaHunt/)
